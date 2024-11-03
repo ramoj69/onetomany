@@ -1,0 +1,18 @@
+CREATE TABLE customer (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    table_num VARCHAR (50),
+    cus_name VARCHAR (50),
+    cus_order VARCHAR (50),
+    quantity VARCHAR (50),
+    amount_of_money VARCHAR(50),
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    order_name VARCHAR (50),
+    price VARCHAR(50),
+    customer_id INT,
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
